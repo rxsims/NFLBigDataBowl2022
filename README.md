@@ -27,4 +27,11 @@ The h5 files associated with the TensorFlow model save files used in contrusting
 
 ### Part 3: Making Predictions
 
-Run EvaluatePunter_Full.ipynb - For a given punter, evaluate the optimal landing location and field value for each of their punts in a given season.  This notebook is run for each punter meeting some minimum requirement for punts in a season (which was taken as 1 punter per game i.e. 16 games).  Ideally, the numeric integration would be done in parallel, but it was not implemented.  The full set of all these ideal locations, as well as more predicted statistics, are given in an attached file.
+Run EvaluatePunter_Full.ipynb - For a given punter, evaluate the optimal landing location and field value for each of their punts in a given season.  This notebook is run for each punter meeting some minimum requirement for punts in a season (which was taken as 1 punter per game i.e. 16 games).  Ideally, the numeric integration would be done in parallel, but it was not implemented.
+
+Run ActualPunts.ipynb - Evaluated the expected field value for the actual punt landing location.  Note, Integration Warnings may appear if the out-of-bound or direct-to-endzone plays are not removed before integrating.  These punts are easy to evaluate by the rules of the game, and do not need modeling to find their expected values.
+
+The full set of all these ideal locations, as well as more predicted statistics, are given in an attached file.
+
+Run ComparisontoOptimal.ipynb - Tabulates the results of the previous two notebooks into a single table, ranking each punter's performance relative to the optimal predicted values.
+
