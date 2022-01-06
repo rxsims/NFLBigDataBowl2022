@@ -11,7 +11,10 @@ Part 1:
 4) Run PreSnap_Full.ipynb - Organizes all player positional data, football starting and landing coordinates, hang time, and bounce vs catch label for each punt.
 5) Run ReturnLength.ipynb - Finds distance from punt landing x-coordinate to the x-coordinate of the ball at first contact.
 6) Run BounceDirection.ipynb - Find the length of bounces and creates features for training MDN model.
+
 Each of these notebooks will create a file: fb_land.csv, BounceCatch.csv, snapframe.csv, BC_AllPlayers.csv, FullTeamReturn.csv, BounceFeatures.csv.
+
 While the first 4 of these notebooks appear in the originally submitted file, the final 3 will produce the relevant training data for each of the models in question.
+
 
 Part 2:
